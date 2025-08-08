@@ -1,28 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BoulderLog Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoulderLab Support | CruxLab App</title>
     <style>
-        body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; }
-        h1 { color: #FF6B6B; } 
-        a { color: #4A90E2; }
+        :root {
+            --primary: #FF6B6B; /* Boulder orange */
+            --secondary: #4A90E2; /* Climbing blue */
+            --dark: #2E3542; /* Text color */
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h1 { color: var(--primary); }
+        h2 { color: var(--secondary); margin-top: 30px; }
+        .feature-box {
+            background: #F8F9FA;
+            border-left: 4px solid var(--secondary);
+            padding: 15px;
+            margin: 20px 0;
+        }
+        code {
+            background: #F1F3F5;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: Menlo, monospace;
+        }
+        a { color: var(--secondary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-box {
+            background: #EFF8FF;
+            border: 1px solid var(--secondary);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
     </style>
 </head>
 <body>
-    <h1>BoulderLog Support</h1>
-    <p>Need help? We've got you covered.</p>
-    
-    <h2>🔍 FAQs</h2>
-    <p><strong>Q: How do I log a climb?</strong><br>
-    A: Tap the "+" button during/after your session.</p>
-    
-    <h2>📧 Contact Us</h2>
-    <p>Email: <a href="mailto:support@boulderlog.app">support@boulderlog.app</a><br>
-    We respond within 24 hours.</p>
-    
-    <h2>🐞 Report Bugs</h2>
-    <p>Help us improve! <a href="mailto:bugs@boulderlog.app">Send details here</a>.</p>
-    
-    <p><small>© 2024 BoulderLog Team</small></p>
+    <header>
+        <h1>BoulderLab Support</h1>
+        <p>Your digital bouldering companion for tracking sends, projects, and progress</p>
+    </header>
+
+    <section>
+        <h2>📱 App Features Guide</h2>
+        
+        <div class="feature-box">
+            <h3>Pro Version Upgrade</h3>
+            <p>Unlocks <strong>unlimited logs</strong> and <strong>full timer access</strong>. Purchase once for lifetime access.</p>
+            <p><em>Note: Restore purchases if you switch devices.</em></p>
+        </div>
+        
+        <div class="feature-box">
+            <h3>Log Pack Purchases</h3>
+            <p>Adds 100 logs to your account when you're not on Pro. Perfect for casual climbers.</p>
+        </div>
+        
+        <div class="feature-box">
+            <h3>Timer Features</h3>
+            <p>Basic access allows 5 timers. Upgrade to Pro for unlimited interval/hangboard timers.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <h3>Account & Data</h3>
+        <p><strong>Q: Is my climbing data backed up?</strong><br>
+        A: Yes! All data syncs via iCloud automatically (enable in iOS Settings).</p>
+        
+        <p><strong>Q: How do I restore purchases?</strong><br>
+        A: Go to Settings → tap "Restore Purchases". Contact us if issues persist.</p>
+        
+        <h3>Troubleshooting</h3>
+        <p><strong>Q: The timer isn't working</strong><br>
+        A: Force quit and reopen the app. Ensure you have timer access (check Settings).</p>
+        
+        <p><strong>Q: My logs disappeared</strong><br>
+        A: Check iCloud status in Settings. If problem continues, email us with your Apple ID.</p>
+    </section>
+
+    <section class="contact-box">
+        <h2>✉️ Contact Support</h2>
+        <p>We respond within <strong>24 hours</strong> on weekdays:</p>
+        <p>
+            <strong>General Support:</strong><br>
+            <a href="mailto:sho.dev.ios@gmail.com?subject=BoulderLab Support">sho.dev.ios@gmail.com</a>
+        </p>
+        <p>
+            <strong>Bug Reports:</strong><br>
+            <a href="mailto:sho.dev.ios@gmail.com?subject=BoulderLab Bug Report">sho.dev.ios@gmail.com</a> (include device model and iOS version)
+        </p>
+        <p>
+            <strong>Feature Requests:</strong><br>
+            <a href="mailto:sho.dev.ios@gmail.com?subject=BoulderLab Feature Idea">sho.dev.ios@gmail.com</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>🔒 Privacy & Terms</h2>
+        <p>We never sell your climbing data. Read our full policies:</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a> (coming soon)</li>
+            <li><a href="#">Terms of Service</a> (coming soon)</li>
+        </ul>
+    </section>
+
+    <footer style="margin-top: 50px; border-top: 1px solid #EEE; padding-top: 20px;">
+        <p>© 2024 BoulderLab by CruxLab | Made for climbers, by climbers</p>
+    </footer>
 </body>
 </html>
